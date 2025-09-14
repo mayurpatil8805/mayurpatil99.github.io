@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1d0f2a, #1e293b);
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: transparent;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.5);
+    }
+
+    section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .about, .projects, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about h2, .projects h2, .contact h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      color: #e2e8f0;
+    }
+    .about h1 {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .contact p {
+      margin-bottom: 12px;
+    }
+
+    .contact a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: #94a3b8;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .education h3 {
+      font-size: 1.3rem;
+      color: #38bdf8;
+    }
+    .education h1 {
+      font-size: 1.4rem;
+      color: #b278e2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Hi, I'm MAYUR PATIL</h1>
+    <p>Aspiring Software Developer | Web Designer | Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+    <a href="#contact" class="btn">🚀 Click </a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1>About Me</h1>
+    <p>
+      I am a BCA student passionate about software development and web technologies.
+      Skilled in C, C++, Java, SQL, HTML, and JavaScript. I love building projects
+      that solve real-world problems and showcase creativity.
+    </p>
+  </section>
+<!-- education-->
+  <section id="education" class="education">
+    <h1>My Education</h1>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <span>2023 – 2026 | pratap college (aoutonomunce) amalner</span>
+        <p>Focused on software development, databases, and web technologies.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Higher Secondary (12th Grade)</h3>
+        <span>2021 – 2023 | pratap college amalner</span>
+        <p>Specialized in Science (PCMb/ Science).</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Secondary School (10th Grade)</h3>
+        <span>2020 – 2021 | G.S highschool amalner</span>
+        <p>Completed foundation education with distinction.</p>
+      </div>
+    
+  </section>
+
+    
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+   <p></p><h1>My Projects</h1></p>
+
+    <div class="card">
+      <h3>Online Voting System</h3>
+      <p>A secure web-based voting platform with voter registration, candidate management, and result generation.</p>
+    </div>
+
+    <div class="card">
+      <h3>self portfolio website</h3>
+      <p>A secure web-based for a my portfolio project ,contact ,eduction,skill in this web site .</p>
+    </div>
+
+    <div class="card">
+      <h3>E-Commerce Platform</h3>
+      <p>An online shopping system with user authentication, product catalog, and cart,payment functionality.</p>
+    </div>
+
+    
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto: mayurapatila99@gmail.com">mayurapatila99@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">https://linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://www.linkedin.com/in/mayur-patil-24453237b/" target="_blank">github.com/yourgithub</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mayur patil. Made with ❤️ | <a href="#top">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
